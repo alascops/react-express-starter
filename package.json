@@ -1,0 +1,17 @@
+{
+  "name": "react-express-starter",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": "true",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "concurrently --kill-others-on-fail \"wsrun --parallel start\"",
+    "dev": "concurrently --kill-others-on-fail \"wsrun --parallel dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "wsrun": "^5.2.4"
+  }
+}
